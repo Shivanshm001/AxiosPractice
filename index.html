@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoGyan</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <style>
+        * {
+            font-family: "Ubuntu", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="p-0 m-0">
+    <nav class="block">
+        <div class="w-auto flex justify-center items-center py-4 bg-gray-50">
+            <form class=" flex flex-shrink flex-wrap gap-5 justify-center items-center">
+                <select
+                    class="py-2 px-8 font-semibold border border-slate-300 outline-none rounded active:drop-shadow focus-within:drop-shadow"
+                    type="text" name="q" id="searchBar" role="searchbox">
+                    <option value="" class="breedOpt">Search Breed</option>
+                </select>
+                <button id="searchBtn" class="bg-orange-200 text-sm py-2 px-3 rounded ring-2 outline outline-orange-100 focus:drop-shadow-md focus:outline-none focus:ring ring-orange-300 ml-2">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--Main info section-->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center sm:items-center px-5 my-5">
+        <div class=" max-w-[300px] max-h-[300px] sm:max-w-[500px] sm:max-h-[500px] justify-center items-center flex">
+            <img src="" alt="" class="img shadow">
+        </div>
+        <div class="p-2 flex justify-center items-center flex-col">
+            <h2 class="breed-name text-center block text-3xl sm:text-4xl my-3"></h2>
+        </div>
+    </div>
+    <hr class="w-full bg-gray-300 py-[1px] mx-4 my-8" />
+    <!-- Sub info section  -->
+    <div class="sub-info flex flex-wrap gap-5 justify-center items-center">
+        <div class="max-h-fit max-w-fit text-2xl sm:text-3xl font-bold ">Bred for: <p class="bred-for text-xl my-4  break-words mx-1 font-semibold text-center"></p> </div>
+        <div class="max-h-fit max-w-fit text-2xl sm:text-3xl font-bold ">Height: <p class="height text-xl my-4  break-words mx-1 font-semibold text-center"></p> </div>
+        <div class="max-h-fit max-w-fit text-2xl sm:text-3xl font-bold">Weight: <p class="weight text-xl my-4  break-words mx-1 font-semibold text-center"></p></div>
+        <div class="max-h-fit max-w-fit text-2xl sm:text-3xl font-bold ">Aprox lifespan: <p class="life-sp text-xl my-4  break-words mx-1 font-semibold text-center"></p></div>
+        <div class="max-h-fit max-w-fit text-2xl sm:text-3xl font-bold ">Origin: <p class="origin text-xl my-4  break-words mx-1 font-semibold text-center"></p></div>
+        <div class="max-h-fit max-w-fit text-2xl sm:text-3xl font-bold  text-center">Temper: <p class="temper text-xl my-4  break-words mx-1 font-semibold text-center"></p></div>
+    </div>
+</body>
+<!-- Axios CDN -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- Index JS  -->
+<script src="./public/index.js"></script>
+
+</html>
